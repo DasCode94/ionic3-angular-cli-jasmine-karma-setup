@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    "baseUrl": "../src",
+    "paths": {
+      "@app/*": [ "app/*" ],
+      "@assets/*": [ "assets/*" ],
+      "@env": [ "environments/environment" ],
+      "@pages/*": [ "pages/*" ],
+      "@services/*": [ "services/*" ],
+      "@tests/*": [ "./*" ],
+      "@theme/*": [ "theme/*" ]
+    }
+  },
+  "files": [
+    "test.ts",
+    "polyfills.ts"
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
